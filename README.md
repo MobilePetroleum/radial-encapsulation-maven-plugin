@@ -28,5 +28,16 @@ Example usage:
         <!-- Optional. If specified, break build after exceeding maxViolations. -->
         <maxViolations>0</maxViolations>
     </configuration>
+    <!-- Hook into process-classes phase. -->
+    <!-- Alternatively run: mvn radial-encapsulation:radial-encapsulation -->
+    <executions>
+        <execution>
+            <id>radial-encapsulation</id>
+            <phase>process-classes</phase>
+            <goals>
+                <goal>radial-encapsulation</goal>
+            </goals>
+        </execution>
+    </executions>
 </plugin>
 ```
