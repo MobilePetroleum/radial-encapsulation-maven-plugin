@@ -16,16 +16,16 @@ Example usage:
     <artifactId>radial-encapsulation-maven-plugin</artifactId>
     <version>1.0.0</version>
     <configuration>
-        <!-- Required. Analyze classes from this package -->
+        <!-- Required. Analyze classes from this package. -->
         <basePackage>com.companyName.projectName</basePackage>
-        <!-- Optional. Exclude classes from analyze. Regexp pattern for fully qualified class name -->
-        <!-- Dependencies from inner class are merged with its outer class dependencies --> 
+        <!-- Optional. Exclude classes from analyze. Regexp pattern for fully qualified class name. -->
+        <!-- Dependencies from inner class are merged with its outer class dependencies. --> 
         <excludes>
             <exclude>.*Factory</exclude>
         </excludes>
         <!-- Optional. Default: true. Analyse test classes. -->
         <includeTestSources>false</includeTestSources>
-        <!-- Optional. If specified, break build after exceeding maxViolations -->
+        <!-- Optional. If specified, break build after exceeding maxViolations. -->
         <maxViolations>0</maxViolations>
     </configuration>
 </plugin>
