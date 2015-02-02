@@ -5,7 +5,7 @@ Inspired by http://edmundkirwan.com/general/radial.html
 This maven plugin can:
 <ul>
   <li>Print all classes that violate radial encapsulation.</li>
-  <li>Break build if found more than <i>maxViolations<i></li>
+  <li>Break build if founds more than <i>maxViolations<i></li>
 </ul>
 
 Example usage:
