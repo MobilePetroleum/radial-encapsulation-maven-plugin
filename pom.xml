@@ -11,7 +11,7 @@
 
     <name>Radial Encapsulation Maven Plugin</name>
     <description>
-        Maven plugin to report and/or ensure radial encapsulation.
+        Maven plugin to report and ensure radial encapsulation.
         Inspired by: http://edmundkirwan.com/general/radial.html
     </description>
     <licenses>

@@ -22,14 +22,14 @@ import static org.apache.maven.plugins.annotations.LifecyclePhase.PROCESS_CLASSE
         defaultPhase = PROCESS_CLASSES)
 public class RadialEncapsulation extends AbstractMojo {
 
-    @Parameter(defaultValue = "${project}")
+    @Parameter(defaultValue = "${project}", readonly = true)
     MavenProject project;
 
     @Parameter(property = "includeTestSources", defaultValue = "true")
     boolean includeTestSources;
 
     @Parameter(property = "excludes")
-    String[] excludes;
+    String[] excludes = new String[0];
 
     @Parameter(property = "basePackage", required = true)
     String basePackage;
